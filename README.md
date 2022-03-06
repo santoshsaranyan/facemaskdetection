@@ -10,3 +10,9 @@ This Project focuses on detecting if a person is wearing a facemask or not (or w
 •	Developed further into a research paper by adding person recognition using QR Codes and improved visualizations by using Tableau which was then presented at the 2021 ACMI 4.0 International Conference and published on IEEE Xplore. 
 
 • Check out the paper here: https://ieeexplore.ieee.org/document/9528130
+
+Sources of Data (Images) used: 
+• The dataset is collected from different sources such as Kaggle and Google images. Images of people wearing and not wearing masks, were collected from the Kaggle Dataset titled “Face Mask Detection Data” by Aneerban Chakraborty https://www.kaggle.com/aneerbanchakraborty/face-mask-detection-data. 
+
+• For images of people wearing masks incorrectly, a majority of them were collected from the dataset created by Adnane Cabani et al. https://pubmed.ncbi.nlm.nih.gov/33521223/ .
+Some were collected from the Kaggle Dataset named “Face Mask Detector Data” by Spandan Patnaik https://www.kaggle.com/spandanpatnaik09/face-mask-detectormask-not-mask-incorrect-mask. The remaining images were scraped from Google Images.

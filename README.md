@@ -11,6 +11,9 @@ This Project focuses on detecting if a person is wearing a facemask or not (or w
 
 • Check out the paper here: https://ieeexplore.ieee.org/document/9528130
 
+facemask_model_final.py is concerned with training the MobileNet model. 
+mask_and_qr_detector.py focuses on the detection of the person and gathering the data.
+
 Sources of Data (Images) used: 
 
 • The dataset is collected from different sources such as Kaggle and Google images. Images of people wearing and not wearing masks, were collected from the Kaggle Dataset titled “Face Mask Detection Data” by Aneerban Chakraborty https://www.kaggle.com/aneerbanchakraborty/face-mask-detection-data. 

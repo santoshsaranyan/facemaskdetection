@@ -27,7 +27,7 @@ EPOCHS = 20
 BS = 32
 
 # Directories where the training images are stored and getting the categories to classify for
-DIRECTORY = r"D:\Santosh\College\FYP\Face-Mask-Detection-master\Face-Mask-Detection-master\dataset"
+DIRECTORY = r".\dataset"
 CATEGORIES = ["without_mask", "with_mask", "incorrectly_worn"]
 
 data = []
@@ -112,17 +112,3 @@ print(classification_report(testY.argmax(axis=1), predIdxs,
 
 # Save the model to disk
 model.save("mask_detector7.model", save_format="h5")
-
-# Plot the training loss and accuracy
-N = EPOCHS
-plt.style.use("ggplot")
-plt.figure()
-plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
-plt.plot(np.arange(0, N), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, N), H.history["accuracy"], label="train_acc")
-plt.plot(np.arange(0, N), H.history["val_accuracy"], label="val_acc")
-plt.title("Training Loss and Accuracy")
-plt.xlabel("Epoch #")
-plt.ylabel("Loss/Accuracy")
-plt.legend(loc="lower left")
-plt.savefig("plot7.png")

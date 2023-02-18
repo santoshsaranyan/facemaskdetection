@@ -268,29 +268,8 @@ df.drop("Ppl", inplace=True, axis=1)
 df.index.set_names("Person Number", inplace=True)
 df.index+=1
 df['Date'] = pd.to_datetime(df['Date'], format="%Y-%m-%d %H:%M:%S")
-#df3=pd.read_csv('temp2.csv', index_col="Person Number")
-#df4=pd.concat([df3,df], ignore_index=True)
-#df4.index.set_names("Person Number", inplace=True)
-#df4.index+=1
-#df4.to_csv('temp2.csv')
 df.to_csv('temp4.csv')
 
-
-'''def analytics(mask2_count, nomask2_count, inc2_count):
-    mask2_count = mask2_count/2
-    nomask2_count = nomask2_count/2
-    inc2_count = inc2_count/2
-    total_count = mask2_count + nomask2_count + inc2_count
-    percent_mask=((mask2_count/total_count)*100)
-    percent_nomask=((nomask2_count/total_count)*100)
-    percent_inc=((inc2_count/total_count)*100)
-    print(percent_mask, percent_nomask, percent_inc)
-    ratio_array=[percent_mask, percent_nomask, percent_inc]
-    df2=pd.DataFrame(columns=["Mask %", "Without Mask %", "Incorrectly Worn %"])
-    df2.loc[0]=ratio_array
-    df2.to_csv('file2.csv')
-
-analytics(mask2_count, nomask2_count, inc2_count)'''  
 
 #Cleanup
 cv2.destroyAllWindows()
